@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Make an Enquiry | Pad A Girl Foundation</title>
+
+    <meta name="description"
+        content="Enquire about menstrual products, education, volunteering, donations and sponsorship opportunities with Pad A Girl Foundation.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <img src="logo.png" alt="Pad A Girl Foundation Logo">
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-page">
+
+            <h1 class="section-heading">MAKE AN ENQUIRY</h1>
+
+            <p>
+                Would you like to support Pad A Girl Foundation or learn
+                more about our services? Complete the form below.
+            </p>
+
+        </section>
+
+        <section class="form-section">
+
+            <h2>Enquiry Form</h2>
+
+            <form id="enquiryForm">
+
+                <div class="form-group">
+
+                    <label for="enquiryName">Full Name *</label>
+
+                    <input type="text" id="enquiryName" name="fullName" required minlength="2" maxlength="80"
+                        autocomplete="name" placeholder="Enter your full name">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="enquiryEmail">Email Address *</label>
+
+                    <input type="email" id="enquiryEmail" name="email" required maxlength="254" autocomplete="email"
+                        placeholder="Enter your email address">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="enquiryPhone">Phone Number</label>
+
+                    <input type="tel" id="enquiryPhone" name="phone" pattern="(\+27|0)[0-9]{9}"
+                        title="Enter a South African number, for example 0731166424 or +27731166424."
+                        placeholder="e.g. 0731166424" autocomplete="tel">
+
+                    <p class="form-help">
+                        Optional. Use a South African number starting
+                        with 0 or +27.
+                    </p>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="enquiryType">Type of Enquiry *</label>
+
+                    <select id="enquiryType" name="enquiryType" required>
+
+                        <option value="">Select an enquiry type</option>
+
+                        <option value="products">
+                            Menstrual Products
+                        </option>
+
+                        <option value="education">
+                            Menstrual Health Education
+                        </option>
+
+                        <option value="volunteer">
+                            Volunteering
+                        </option>
+
+                        <option value="sponsor">
+                            Sponsorship
+                        </option>
+
+                        <option value="donations">
+                            Donations
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="enquiryDetails">
+                        Tell Us More About Your Enquiry *
+                    </label>
+
+                    <textarea id="enquiryDetails" name="details" required minlength="10" maxlength="1000"
+                        placeholder="Please describe your enquiry..."></textarea>
+
+                </div>
+
+                <button type="submit" class="form-button">
+                    Submit Enquiry
+                </button>
+
+            </form>
+
+            <div id="enquiryMessage" class="success-message" role="status" aria-live="polite" hidden></div>
+
+            <p class="form-help">
+                For further assistance, email
+                info@padagirlsa.co.za.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; ST10519276 #PAD_A_GIRL
+    </footer>
+
+    <script src="JavaScript/script.js" defer></script>
+
+</body>
+
+</html>
