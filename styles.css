@@ -1,0 +1,954 @@
+```css
+/* =========================================================
+   PAD A GIRL FOUNDATION
+   EXTERNAL STYLESHEET - PART 2
+   ========================================================= */
+
+
+/* =========================================================
+   1. CSS RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   2. GENERAL STYLES
+   ========================================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   3. HEADER AND NAVIGATION
+   ========================================================= */
+
+header {
+    background-color: white;
+    padding: 1rem 5%;
+    border-bottom: 3px solid #f4c2d7;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 130px;
+    height: 85px;
+    object-fit: contain;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+
+    padding: 0.7rem 1.1rem;
+    border-radius: 2rem;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Navigation hover */
+nav a:hover {
+    background-color: #d63384;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* Navigation focus */
+nav a:focus {
+    outline: 3px solid #d63384;
+    outline-offset: 3px;
+}
+
+
+/* Navigation active */
+nav a:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   4. MAIN CONTENT
+   ========================================================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+
+/* Main page headings */
+
+main>h1 {
+    text-align: center;
+    color: #d63384;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 2.8rem;
+}
+
+h2 {
+    color: #d63384;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #c0266f;
+    font-size: 1.3rem;
+}
+
+
+/* Section headings */
+
+.section-heading {
+    text-align: center;
+    margin: 3rem 0 1.5rem;
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #d63384;
+    margin: 0.7rem auto;
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   5. HOME PAGE - HERO SECTION
+   ========================================================= */
+
+.welcome-section {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 4rem;
+    padding: 3rem 2rem;
+
+    background-color: white;
+    border-radius: 1.5rem;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 3rem;
+}
+
+
+/* Left side */
+
+.welcome-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.welcome-text h1 {
+    font-size: 3.2rem;
+    color: #d63384;
+    margin-bottom: 1rem;
+}
+
+.welcome-text h2 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.welcome-text p {
+    font-size: 1.1rem;
+    max-width: 550px;
+}
+
+
+/* Right side */
+
+.welcome-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 330px;
+
+    object-fit: cover;
+    border-radius: 1.5rem;
+
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.2);
+}
+
+
+/* =========================================================
+   6. BUTTON
+   ========================================================= */
+
+.learn-more {
+    display: inline-block;
+
+    background-color: #d63384;
+    color: white;
+
+    padding: 0.8rem 1.8rem;
+
+    border-radius: 2rem;
+
+    font-weight: bold;
+    font-size: 1rem;
+
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #b52b6e;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(214, 51, 132, 0.3);
+}
+
+.learn-more:focus {
+    outline: 3px solid #333;
+    outline-offset: 4px;
+}
+
+.learn-more:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   7. MISSION SECTION
+   ========================================================= */
+
+.mission-section {
+    display: flex;
+    align-items: center;
+
+    gap: 4rem;
+
+    background-color: #fce8f1;
+
+    padding: 3rem;
+    border-radius: 1.5rem;
+
+    margin-bottom: 3rem;
+}
+
+.mission-image {
+    flex: 0 0 40%;
+}
+
+.mission-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 1.2rem;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text p {
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   8. WHAT WE DO - GRID
+   ========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+
+.service-card {
+    background-color: white;
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    border-radius: 1.2rem;
+
+    border: 1px solid #f3d3df;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Card hover effect */
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(214, 51, 132, 0.15);
+
+    border-color: #d63384;
+}
+
+
+.service-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 1rem;
+
+    margin: 0 auto 1rem;
+}
+
+.service-card h3 {
+    margin-bottom: 0.7rem;
+}
+
+
+/* =========================================================
+   9. CALL TO ACTION
+   ========================================================= */
+
+.call-to-action {
+    text-align: center;
+
+    background-color: #d63384;
+
+    color: white;
+
+    padding: 3rem 2rem;
+
+    border-radius: 1.5rem;
+
+    margin: 3rem 0;
+}
+
+.call-to-action h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   10. VIDEO
+   ========================================================= */
+
+.video-container {
+    text-align: center;
+
+    margin: 3rem 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    border-radius: 1.2rem;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   11. ABOUT PAGE
+   ========================================================= */
+
+.about-section {
+    display: flex;
+    align-items: center;
+
+    gap: 4rem;
+
+    background-color: white;
+
+    padding: 3rem;
+
+    border-radius: 1.5rem;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    margin-bottom: 3rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+.about-image {
+    flex: 0 0 40%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 1.2rem;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Vision */
+
+.vision-section {
+    background-color: #fce8f1;
+
+    text-align: center;
+
+    width: 85%;
+
+    margin: 3rem auto;
+
+    padding: 2.5rem;
+
+    border-radius: 1.5rem;
+}
+
+.vision-section h2 {
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   12. SERVICES PAGE
+   ========================================================= */
+
+.services-page {
+    text-align: center;
+}
+
+.services-page>p {
+    max-width: 750px;
+    margin: 0 auto 2rem;
+}
+
+.service-list {
+    max-width: 850px;
+
+    margin: 2rem auto;
+}
+
+.service-item {
+    background-color: white;
+
+    padding: 1.5rem 2rem;
+
+    margin-bottom: 1.2rem;
+
+    border-left: 6px solid #d63384;
+
+    border-radius: 0.8rem;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    text-align: left;
+
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateX(5px);
+
+    box-shadow: 0 7px 18px rgba(214, 51, 132, 0.12);
+}
+
+.service-item b {
+    display: block;
+
+    color: #d63384;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   13. GALLERY PAGE
+   ========================================================= */
+
+.gallery-intro {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 0 auto 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.3rem;
+
+    margin-top: 2rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.2);
+}
+
+
+/* =========================================================
+   14. CONTACT PAGE
+   ========================================================= */
+
+.contact-page {
+    text-align: center;
+}
+
+.contact-page>p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    max-width: 700px;
+
+    margin: 2.5rem auto;
+
+    background-color: white;
+
+    padding: 2.5rem;
+
+    border-radius: 1.5rem;
+
+    border-top: 6px solid #d63384;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+    padding: 0.8rem;
+
+    border-bottom: 1px solid #eee;
+}
+
+.contact-info p:last-child {
+    border-bottom: none;
+}
+
+.contact-info b {
+    color: #d63384;
+}
+
+
+/* =========================================================
+   15. HORIZONTAL LINES
+   ========================================================= */
+
+hr {
+    border: none;
+
+    height: 2px;
+
+    background-color: #f4c2d7;
+
+    margin: 3rem 0;
+}
+
+
+/* =========================================================
+   16. FOOTER
+   ========================================================= */
+
+footer {
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 3rem;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   17. TABLET BREAKPOINT
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    /* Navigation */
+
+    nav img {
+        width: 110px;
+        height: 75px;
+
+        margin-right: 1rem;
+    }
+
+    nav a {
+        padding: 0.6rem 0.8rem;
+
+        font-size: 0.9rem;
+    }
+
+
+    /* Hero */
+
+    .welcome-section {
+        gap: 2rem;
+
+        padding: 2rem;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.4rem;
+    }
+
+
+    /* Mission and About */
+
+    .mission-section,
+    .about-section {
+        gap: 2rem;
+
+        padding: 2rem;
+    }
+
+
+    /* Cards */
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Gallery */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* General headings */
+
+    main>h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* =========================================================
+   18. MOBILE BREAKPOINT
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+
+    header {
+        position: relative;
+
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+
+        gap: 0.3rem;
+    }
+
+    nav img {
+        margin: 0 auto 0.5rem;
+
+        width: 110px;
+        height: 75px;
+    }
+
+    nav a {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 0.6rem;
+    }
+
+
+    /* Main */
+
+    main {
+        width: 92%;
+
+        padding: 2rem 0;
+    }
+
+
+    /* Headings */
+
+    main>h1 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+
+    /* Hero */
+
+    .welcome-section {
+        flex-direction: column;
+
+        padding: 1.5rem;
+
+        gap: 2rem;
+
+        text-align: center;
+    }
+
+    .welcome-text {
+        padding: 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
+    }
+
+    .welcome-image img {
+        height: 250px;
+    }
+
+
+    /* Mission */
+
+    .mission-section {
+        flex-direction: column;
+
+        padding: 1.5rem;
+
+        text-align: center;
+    }
+
+    .mission-image {
+        flex: none;
+
+        width: 100%;
+    }
+
+    .mission-image img {
+        margin: 0 auto;
+    }
+
+
+    /* About */
+
+    .about-section {
+        flex-direction: column;
+
+        padding: 1.5rem;
+
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        margin: 0 auto;
+    }
+
+
+    /* Service cards */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1.3rem;
+    }
+
+
+    /* Gallery */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 250px;
+    }
+
+
+    /* Vision */
+
+    .vision-section {
+        width: 100%;
+
+        padding: 1.5rem;
+    }
+
+
+    /* Services page */
+
+    .service-item {
+        text-align: center;
+
+        padding: 1.3rem;
+    }
+
+
+    /* Contact */
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+
+    /* Call to action */
+
+    .call-to-action {
+        padding: 2rem 1rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+
+    /* Video */
+
+    .video-container video {
+        width: 100%;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 1.2rem;
+
+        font-size: 0.8rem;
+    }
+}
+
+```
